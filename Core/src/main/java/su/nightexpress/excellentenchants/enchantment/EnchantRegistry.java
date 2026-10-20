@@ -119,6 +119,7 @@ public class EnchantRegistry {
         this.register(EnchantHover.ID, () -> new EnchantHover(plugin));
         this.register(EnchantPoisonedArrows.ID, () -> new EnchantPoisonedArrows(plugin));
         this.register(EnchantWitheredArrows.ID, () -> new EnchantWitheredArrows(plugin));
+        this.register(EnchantWindBow.ID, () -> new EnchantWindBow(plugin));
 
         // Universal
         this.register(EnchantCurseOfFragility.ID, () -> new EnchantCurseOfFragility(plugin));
