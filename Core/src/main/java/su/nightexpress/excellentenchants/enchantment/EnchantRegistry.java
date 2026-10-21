@@ -114,7 +114,7 @@ public class EnchantRegistry {
         this.register(EnchantDragonfireArrows.ID, () -> new EnchantDragonfireArrows(plugin));
         this.register(EnchantElectrifiedArrows.ID, () -> new EnchantElectrifiedArrows(plugin));
         this.register(EnchantEnderBow.ID, () -> new EnchantEnderBow(plugin));
-        this.register(EnchantEnderBow.ID, () -> new EnchantWindBow(plugin));
+        this.register(EnchantWindBow.ID, () -> new EnchantWindBow(plugin));
         this.register(EnchantExplosiveArrows.ID, () -> new EnchantExplosiveArrows(plugin));
         this.register(EnchantGhast.ID, () -> new EnchantGhast(plugin));
         this.register(EnchantHover.ID, () -> new EnchantHover(plugin));
