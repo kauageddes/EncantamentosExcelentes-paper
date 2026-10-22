@@ -107,6 +107,7 @@ public class EnchantRegistry {
         this.register(EnchantSaturation.ID, () -> new EnchantSaturation(plugin));
         this.register(EnchantSelfDestruction.ID, () -> new EnchantSelfDestruction(plugin));
         this.register(EnchantSonic.ID, () -> new EnchantSonic(plugin));
+        this.register(CurseOfAlmaCondenada.ID, () -> new CurseOfAlmaCondenada(plugin));
 
         // Bow enchants
         this.register(EnchantBomber.ID, () -> new EnchantBomber(plugin));
