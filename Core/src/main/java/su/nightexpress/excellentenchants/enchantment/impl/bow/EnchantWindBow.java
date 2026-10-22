@@ -17,20 +17,25 @@ import su.nightexpress.excellentenchants.enchantment.impl.ExcellentEnchant;
 import su.nightexpress.excellentenchants.enchantment.impl.meta.ChanceImplementation;
 import su.nightexpress.excellentenchants.enchantment.util.EnchantPriority;
 
-public class EnchantEnderBow extends ExcellentEnchant implements BowEnchant, Chanced {
+
+public class EnchantWindBow extends ExcellentEnchant implements BowEnchant, Chanced {
+
 
     public static final String ID = "wind_bow";
 
     private ChanceImplementation chanceImplementation;
 
-    public EnchantWindBow(@NotNull ExcellentEnchants plugin) {
+
+    public EnchantWind(@NotNull ExcellentEnchants plugin) {
         super(plugin, ID, EnchantPriority.HIGHEST);
-        this.getDefaults().setDescription("Atira cargas de vento ao invés de flechas.");
+        this.getDefaults().setDescription("Atira bolas de vento ao invés de flechas.");
+
         this.getDefaults().setLevelMax(1);
         this.getDefaults().setTier(1.0);
 
         this.getDefaults().setConflicts(
             EnchantBomber.ID, EnchantEnderBow.ID, EnchantGhast.ID,
+            EnchantBomber.ID, EnchantGhast.ID,
             EnchantExplosiveArrows.ID, EnchantPoisonedArrows.ID, EnchantConfusingArrows.ID,
             EnchantWitheredArrows.ID, EnchantElectrifiedArrows.ID, EnchantDragonfireArrows.ID,
             EnchantHover.ID,
